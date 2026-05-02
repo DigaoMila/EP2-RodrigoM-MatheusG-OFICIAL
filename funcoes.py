@@ -71,3 +71,32 @@ def calcula_pontos_sequencia_alta(dados):
         return 30
 
     return 0
+
+#EX 8
+
+def calcula_pontos_full_house(lista):
+    dic={}
+    x=0
+    soma=0
+    t2=False
+    t3=False
+    for i in lista:
+        if i not in dicio:
+            dicio[i]=1
+            x+=1
+        else:
+            dicio[i]+=1
+        soma+=i
+    if x!=2:
+        return 0
+    else:
+        for cont in lista:
+            if dicio[cont]==2:
+                t2=True
+            elif dicio[cont]==3:
+                t3=True
+        if t3 and t2:
+            return soma
+        else:
+            return 0
+        
