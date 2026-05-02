@@ -28,3 +28,13 @@ def remover_dado(dados_rolados, dados_no_estoque, dado_para_remover):
     dados_no_estoque.pop(dado_para_remover)
 
     return [dados_rolados, dados_no_estoque]
+
+#EX 4
+
+def calcula_pontos_regra_simples(dados):
+    pontos = {}
+
+    for lado in range(1, 7):
+        pontos[lado] = dados.count(lado) * lado
+
+    return pontos
