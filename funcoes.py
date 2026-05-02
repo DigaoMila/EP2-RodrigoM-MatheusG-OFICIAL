@@ -144,4 +144,15 @@ def calcula_pontos_regra_avancada(lista):
     dicionario['sequencia_baixa'] = calcula_pontos_sequencia_baixa(lista)
     return dicionario
 
+#EX 12
+
+def faz_jogada(lista, categoria, info):
+    if categoria in ['1', '2', '3', '4', '5', '6']:
+        pontos=calcula_pontos_regra_simples(lista)
+        info['regra_simples'][int(categoria)] = pontos[int(categoria)]
+    else:
+        pontos=calcula_pontos_regra_avancada(lista)
+        info['regra_avancada'][categoria]=pontos[categoria]
+    return info
+
         
