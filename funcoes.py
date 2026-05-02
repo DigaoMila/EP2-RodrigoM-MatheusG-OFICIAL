@@ -100,3 +100,21 @@ def calcula_pontos_full_house(lista):
         else:
             return 0
         
+#EX 9
+
+def calcula_pontos_quadra(lista):
+    dicio = {}
+    soma = 0
+    for i in lista:
+        if i in dicio:
+            dicio[i] += 1
+        else:
+            dicio[i] = 1
+        soma += i
+    for num, quant in dicio.items():
+        if quant >= 4:
+            return soma
+    
+    return 0
+
+        
