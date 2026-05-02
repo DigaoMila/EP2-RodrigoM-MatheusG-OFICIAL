@@ -42,4 +42,9 @@ def calcula_pontos_regra_simples(dados):
 #EX 5
 
 def calcula_pontos_soma(dados):
-    return sum(dados)
+    total = 0
+
+    for dado in dados:
+        total = total + dado
+
+    return total
