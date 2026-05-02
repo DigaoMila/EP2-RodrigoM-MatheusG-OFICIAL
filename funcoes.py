@@ -75,7 +75,7 @@ def calcula_pontos_sequencia_alta(dados):
 #EX 8
 
 def calcula_pontos_full_house(lista):
-    dic={}
+    dicio={}
     x=0
     soma=0
     t2=False
